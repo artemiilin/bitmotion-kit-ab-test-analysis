@@ -1,41 +1,124 @@
 # Statistical Hypothesis Testing and A/B Test Analysis
 
-## Project Overview
+## Описание проекта
 
-This project includes two product analytics case studies.
+Проект включает два аналитических исследования в области продуктовой аналитики и математической статистики.
 
-The first part focuses on testing a statistical hypothesis about user activity in the Yandex Books service. The goal is to determine whether there are statistically significant differences in user behavior between Moscow and Saint Petersburg.
+Первая часть посвящена проверке статистической гипотезы о пользовательской активности сервиса Яндекс Книги. Цель исследования — определить, существуют ли статистически значимые различия в активности пользователей Москвы и Санкт-Петербурга.
 
-The second part focuses on evaluating an A/B test for BitMotion Kit, an online store selling gamified fitness products. The goal is to assess the correctness of the experiment and determine whether the redesigned website had a statistically significant effect on purchase conversion.
+Вторая часть посвящена анализу результатов A/B-тестирования интернет-магазина BitMotion Kit. Цель исследования — оценить корректность проведения эксперимента и определить, оказал ли новый дизайн сайта статистически значимое влияние на конверсию пользователей в покупку.
 
-## Tools
+---
+
+## Цель проекта
+
+Определить:
+
+- существуют ли различия в пользовательской активности между двумя городами;
+- можно ли считать выявленные различия статистически значимыми;
+- привёл ли новый дизайн сайта к росту конверсии;
+- насколько результаты эксперимента соответствуют ожидаемому эффекту;
+- можно ли рекомендовать внедрение новой версии продукта.
+
+---
+
+## Используемые технологии
 
 - Python
 - Pandas
 - Matplotlib
 - SciPy
 - Statsmodels
+- Jupyter Notebook
+
+---
+
+## Выполненные задачи
+
+### Подготовка данных
+
+- Исследование структуры данных.
+- Обработка пропущенных значений.
+- Поиск и удаление дубликатов.
+- Проверка корректности данных.
+
+### Проверка статистических гипотез
+
+- Формулирование нулевой и альтернативной гипотез.
+- Анализ пользовательской активности.
+- Проверка статистической значимости различий между группами.
+- Интерпретация результатов статистических тестов.
+
+### Анализ A/B-теста
+
+- Проверка корректности проведения эксперимента.
+- Анализ контрольной и экспериментальной групп.
+- Расчёт конверсии пользователей.
+- Оценка статистической значимости различий.
+- Сравнение фактического эффекта с ожидаемым MDE.
+
+---
+
+## Используемые статистические методы
+
+- Welch's t-test
+- Z-test for Proportions
+- Statistical Hypothesis Testing
+- Confidence Intervals
+- Conversion Analysis
+- Sample Size Evaluation
+
+---
+
+## Основные результаты
+
+### Исследование пользовательской активности
+
+- Статистически значимых различий в средней пользовательской активности между Москвой и Санкт-Петербургом выявлено не было.
+- Полученные различия могут объясняться случайными колебаниями выборки.
+
+### Анализ A/B-тестирования
+
+- Экспериментальная группа продемонстрировала более высокую конверсию по сравнению с контрольной группой.
+- Разница в конверсии оказалась статистически значимой.
+- Фактический рост конверсии оказался ниже ожидаемого минимально детектируемого эффекта (MDE).
+- Результаты эксперимента подтвердили положительное влияние нового дизайна на поведение пользователей.
+
+---
+
+## Бизнес-рекомендации
+
+По результатам исследования:
+
+- Не выявлено оснований считать, что географический фактор оказывает существенное влияние на пользовательскую активность сервиса Яндекс Книги.
+- Новая версия сайта BitMotion Kit демонстрирует улучшение конверсии и может быть рекомендована к внедрению после оценки экономической эффективности полученного эффекта.
+- При планировании будущих экспериментов рекомендуется учитывать фактические размеры эффекта и необходимый объём выборки.
+
+---
+
+## Полученные навыки
+
 - Statistical Hypothesis Testing
 - A/B Testing
+- Product Analytics
+- Conversion Analysis
+- Confidence Intervals
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Python
+- Pandas
+- SciPy
+- Statsmodels
 
-## Project Tasks
+---
 
-- Data preprocessing
-- Duplicate detection and handling
-- Exploratory data analysis
-- Sample size estimation
-- Conversion analysis
-- Welch's t-test
-- Z-test for proportions
-- A/B test evaluation
+## Файлы проекта
 
-## Key Results
+- `ab_test_and_hypothesis_testing.ipynb` — аналитическое исследование и анализ результатов A/B-тестирования.
+- `README.md` — описание проекта.
 
-- No statistically significant difference was found in average user activity between Moscow and Saint Petersburg.
-- The experimental group in the A/B test showed higher conversion than the control group.
-- The conversion difference was statistically significant.
-- The observed conversion uplift was lower than the expected MDE.
+---
 
-## Project Files
+## Автор
 
-- `ab_test_and_hypothesis_testing.ipynb`
+Артемий Ильин
