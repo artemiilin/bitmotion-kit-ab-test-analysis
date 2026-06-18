@@ -1,4 +1,4 @@
-# Statistical Hypothesis Testing and A/B Test Analysis
+# Анализ пользовательской активности и оценка результатов A/B-тестирования
 
 ## Описание проекта
 
